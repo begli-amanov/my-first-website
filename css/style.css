@@ -112,6 +112,11 @@ a {
 .brand-name {
   margin: 0;
   font: 400 2.0625rem/2.25rem 'Poppins', sans-serif;
+  opacity: .5;
+}
+
+.brand-name:hover {
+  opacity: 1;
 }
 
 .flex {
@@ -124,14 +129,19 @@ a {
   padding: .4375rem 1.25rem .4375rem 1.25rem;
   font: .75rem/1.125rem 'Poppins', sans-serif;
   letter-spacing: .0625rem;
-  position: relative;
   display: inline-block;
-  vertical-align: top;
-  text-align: left;
+  text-transform: uppercase;
+  opacity: .5;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font: .75rem/1.125rem 'Poppins', sans-serif;
+  margin-bottom: 2rem;
 }
 
 .section {
-  position: relative;
   margin-top: 0;
   margin-bottom: 3.875rem;
 }
@@ -147,10 +157,15 @@ img {
   height: 18.75rem;
 }
 
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
 
 .row-width {
   margin-left: -.625rem;
   margin-right: -.625rem;
+  display: block;
 }
 
 /* ==========================================================================
