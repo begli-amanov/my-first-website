@@ -92,80 +92,79 @@ textarea {
   box-sizing: border-box;
 }
 
+:root {
+  --flex: flex;
+  --content-padding: .5rem 2rem;
+  --regular-font: 1rem/1.5rem 'Poppins', sans-serif;
+}
+
+h2 {
+  font: 2rem/3rem 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 a {
   color: #222;
   text-decoration: none;
 }
 
-.container {
-  margin: auto;
-  max-width: 58.75rem;
-}
-
-.nav-bar {
-  padding-top: 4.375rem;
-  padding-bottom: 4.375rem;
-  margin: auto;
+.headers {
   text-transform: uppercase;
+  font: 1.3rem/2rem 'Poppins', sans-serif;
+  text-align: center;
+  margin: .5rem;
 }
 
-.brand-name {
-  margin: 0;
-  font: 400 2.0625rem/2.25rem 'Poppins', sans-serif;
-  opacity: .5;
+.site-name {
+  font: bold 2.125rem/3rem 'Poppins', sans-serif;
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
-.brand-name:hover {
+.site-name:hover {
   opacity: 1;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
+.navigation {
+  display: var(--flex);
   justify-content: space-between;
+  align-items: center;
+  padding: var(--content-padding);
 }
 
-.navigation-link {
-  padding: .4375rem 1.25rem .4375rem 1.25rem;
-  font: .75rem/1.125rem 'Poppins', sans-serif;
-  letter-spacing: .0625rem;
-  display: inline-block;
+.nav-links {
+  font: var(--regular-font);
+  margin-left: 1.25rem;
   text-transform: uppercase;
-  opacity: .5;
 }
 
-.title {
-  text-transform: uppercase;
-  text-align: center;
-  font: .75rem/1.125rem 'Poppins', sans-serif;
-  margin-bottom: 2rem;
+.content-wrapper {
+  padding: var(--content-padding);
 }
 
-.section {
-  margin-top: 0;
-  margin-bottom: 3.875rem;
+.cards {
+  display: flex;
+  justify-content: space-around;
 }
 
-.list-item {
-  display: inline-block;
-  padding-left: .5rem;
-  padding-right: .5rem;
+.resources {
+  border: 1px solid #d9d9d9;
+  width: 27rem;
+  margin: 1rem;
+}
+
+.description {
+  font: var(--regular-font);
+  padding: .5rem 1rem;
+  font-style: italic;
 }
 
 img {
-  width: 18.75rem;
+  width: 27rem;
   height: 18.75rem;
-}
-
-.w-inline-block {
-  max-width: 100%;
-  display: inline-block;
-}
-
-.row-width {
-  margin-left: -.625rem;
-  margin-right: -.625rem;
-  display: block;
+  object-fit: cover;
 }
 
 /* ==========================================================================
