@@ -95,11 +95,15 @@ textarea {
 
 :root {
   --flex: flex;
-  --content-padding: .5rem 2rem;
+  --content-padding: .5rem 1rem;
   --primary-font: 1rem/1.5rem 'Poppins', sans-serif;
   --primary-color: #222;
   --secondary-color: #ff7b29;
   --btn-hover: #ff5126;
+}
+
+ul {
+  font: var(--primary-font);
 }
 
 h1 {
@@ -154,7 +158,7 @@ a:hover {
 .cards {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .resources {
