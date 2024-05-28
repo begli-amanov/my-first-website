@@ -40,9 +40,10 @@ html {
 
 hr {
   display: block;
-  height: 1px;
+  width: 10.1875rem;
+  height: .3125rem;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: .1875rem solid #222;
   margin: 1em 0;
   padding: 0;
 }
@@ -95,19 +96,30 @@ textarea {
 :root {
   --flex: flex;
   --content-padding: .5rem 2rem;
-  --regular-font: 1rem/1.5rem 'Poppins', sans-serif;
+  --primary-font: 1rem/1.5rem 'Poppins', sans-serif;
+  --primary-color: #222;
+  --secondary-color: #ff7b29;
+  --btn-hover: #ff5126;
+}
+
+h1 {
+  margin-bottom: 1rem;
 }
 
 h2 {
   font: 2rem/3rem 'Poppins', sans-serif;
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 a {
   color: #222;
   text-decoration: none;
+}
+
+a:hover {
+  color: #ff7b29;
 }
 
 .headers {
@@ -119,12 +131,7 @@ a {
 
 .site-name {
   font: bold 2.125rem/3rem 'Poppins', sans-serif;
-  opacity: 0.8;
   text-decoration: underline;
-}
-
-.site-name:hover {
-  opacity: 1;
 }
 
 .navigation {
@@ -135,7 +142,7 @@ a {
 }
 
 .nav-links {
-  font: var(--regular-font);
+  font: var(--primary-font);
   margin-left: 1.25rem;
   text-transform: uppercase;
 }
@@ -146,17 +153,18 @@ a {
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .resources {
   border: 1px solid #d9d9d9;
   width: 27rem;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .description {
-  font: var(--regular-font);
+  font: var(--primary-font);
   padding: .5rem 1rem;
   font-style: italic;
 }
@@ -165,6 +173,61 @@ img {
   width: 27rem;
   height: 18.75rem;
   object-fit: cover;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: var(--primary-font);
+  padding: var(--content-padding);
+  margin-top: 1rem;
+}
+
+input {
+  padding: var(--content-padding);
+  margin: 1rem .5rem;
+  font: var(--primary-font);
+  border: 1px solid #d9d9d9;
+}
+
+input:hover,
+input:active,
+input:focus {
+  outline: none;
+}
+
+.input-fields {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.submit-btn {
+  background: #ff7b29;
+  color: #fff;
+  border: .0625rem solid #ff7b29;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background: var(--btn-hover);
+  border: .0625rem solid #ff5126;
+}
+
+footer {
+  background-color: #222;
+  min-width: 100%;
+  color: #fff;
+  font: var(--primary-font);
+  padding: var(--content-padding);
+  text-align: center;
+}
+
+.main-link {
+  color: #fff;
+  font: bold 1.5rem/2.5rem 'Poppins', sans-serif;
 }
 
 /* ==========================================================================
