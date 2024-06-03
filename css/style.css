@@ -170,7 +170,7 @@ a:hover {
 .resources {
   border: .0625rem solid rgba(18, 42, 105, .08);
   border-radius: .5rem;
-  width: 100%;
+  width: 80%;
   margin: 1rem 0;
   box-shadow: var(--shadow);
 }
@@ -244,19 +244,31 @@ footer {
   min-width: 100%;
   color: #fff;
   font: var(--primary-font);
-  padding: var(--content-padding);
-  text-align: center;
+  padding: 6% 3%;
+}
+
+.horizontal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main-link {
   color: #fff;
-  font: 1.5rem/2.5rem 'Poppins', sans-serif;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .social-links {
-  display: inline-flex;
-  gap: .3125rem;
-  align-items: baseline;
+  text-align: center;
+  color: #fff;
+}
+
+.copyrights {
+  opacity: .7;
 }
 
 /* ==========================================================================
