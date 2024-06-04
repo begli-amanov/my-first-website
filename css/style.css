@@ -170,7 +170,7 @@ a:hover {
 .resources {
   border: .0625rem solid rgba(18, 42, 105, .08);
   border-radius: .5rem;
-  width: 80%;
+  width: 90%;
   margin: 1rem 0;
   box-shadow: var(--shadow);
 }
@@ -274,19 +274,38 @@ footer {
 }
 
 .footer-nav {
-  margin-top: 3.125rem;
-  margin-bottom: 2.5rem;
+  margin-top: 2.625rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
 
 .footer-logo {
   color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: .75rem;
 }
 
 .copyrights {
   opacity: .7;
+}
+
+.youtube-button {
+  color: #000;
+  background-color: #ff7b29;
+  border-radius: .625rem;
+  padding: 1.25rem 1.875rem;
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  border: 0;
+  cursor: pointer;
+}
+
+
+.faded-text {
+  opacity: .7;
+  font-size: .9375rem;
+  margin-top: 0;
+  margin-bottom: .625rem;
 }
 
 .footer-image {
