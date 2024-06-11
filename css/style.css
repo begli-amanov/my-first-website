@@ -190,6 +190,12 @@ a:hover {
   padding: .5rem 1rem;
 }
 
+.inline-link {
+  border-bottom: .07142857rem solid #cecfd5;
+  transition: all .15s linear;
+  color: #0087cc;
+}
+
 .subscribe {
   display: flex;
   flex-direction: column;
@@ -231,7 +237,7 @@ input:focus {
   background: #ff7b29;
   color: #fff;
   border: .0625rem solid #ff7b29;
-  transition: background-color .3s;
+  transition: all .15s linear;
 }
 
 .submit-btn:hover {
@@ -304,6 +310,7 @@ footer {
   border: 0;
   box-shadow: var(--shadow);
   cursor: pointer;
+  transition: all .15s linear;
 }
 
 .youtube-button:hover {
