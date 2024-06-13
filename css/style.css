@@ -25,7 +25,9 @@ html {
   --secondary-color: #ff7b29;
   --btn-hover: #ff5126;
   --shadow: 0 2px 6px rgba(18, 43, 105, .04), 0 1px 2px rgba(18, 43, 105, .08), 0 0 0 1px rgba(18, 43, 105, .08);
-  --shadow-on-hover: 0 2px 6px rgba(18, 43, 105, .12), 0 1px 2px rgba(18, 43, 105, .12), 0 0 0 1px rgba(18, 43, 105, .08)
+  --shadow-on-hover: 0 2px 6px rgba(18, 43, 105, .12), 0 1px 2px rgba(18, 43, 105, .12), 0 0 0 1px rgba(18, 43, 105, .08);
+  --primary-border-radius: .5rem;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -94,6 +96,15 @@ fieldset {
 
 textarea {
   resize: vertical;
+  width: 31.25rem;
+  height: 10.625rem;
+  border: .0625rem solid rgba(18, 42, 105, .08);
+  box-shadow: var(--shadow);
+  border-radius: var(--primary-border-radius);
+  padding: .8rem;
+  margin-bottom: 1.5rem;
+  font-size: var(--primary-font);
+  transition: box-shadow .3s;
 }
 
 /* ==========================================================================
@@ -136,7 +147,7 @@ a:hover {
   text-transform: uppercase;
   font: 1.3rem/2rem 'Poppins', sans-serif;
   text-align: center;
-  margin: .5rem;
+  margin: 1.5rem;
 }
 
 .site-name {
@@ -170,25 +181,24 @@ a:hover {
 .resources {
   border: .0625rem solid rgba(18, 42, 105, .08);
   border-radius: .5rem;
-  width: 75%;
+  width: 65%;
   /* width: 55%; */
-  margin: 1rem 0;
+  margin: 1rem 0 4rem 0;
   box-shadow: var(--shadow);
 }
 
-.background {
-  display: block;
-  background: url('/assets/UE-logo.jpg') 50% 36%;
+img {
   width: 100%;
-  height: 15rem;
-
+  height: 28rem;
+  object-fit: cover;
+  background-position: 50% 50%;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
 }
 
 .description {
   font: var(--primary-font);
-  padding: .5rem 1rem;
+  padding: .5rem 1.5rem;
 }
 
 .inline-link {
@@ -218,7 +228,10 @@ input {
 
 input:hover,
 input:active,
-input:focus {
+input:focus,
+textarea:hover,
+textarea:focus,
+textarea:active {
   outline: none;
   box-shadow: var(--shadow-on-hover)
 }
@@ -227,7 +240,7 @@ input:focus {
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .address-field {
@@ -317,7 +330,6 @@ footer {
 .youtube-button:hover {
   background: var(--btn-hover);
 }
-
 
 .faded-text {
   opacity: .7;
