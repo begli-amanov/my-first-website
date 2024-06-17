@@ -61,7 +61,7 @@ hr {
   height: .3125rem;
   border: 0;
   border-top: .1875rem solid #222;
-  margin: .3125rem 0 1rem 0;
+  margin: 0 0 1rem 0;
   padding: 0;
 }
 
@@ -96,12 +96,13 @@ fieldset {
 
 textarea {
   resize: vertical;
-  width: 31.25rem;
-  height: 10.625rem;
+  width: 31rem;
+  min-height: 10.625rem;
   border: .0625rem solid rgba(18, 42, 105, .08);
   box-shadow: var(--shadow);
   border-radius: var(--primary-border-radius);
   padding: .8rem;
+  opacity: 0.7;
   margin-bottom: 1.5rem;
   font-size: var(--primary-font);
   transition: box-shadow .3s;
@@ -119,6 +120,11 @@ textarea {
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
 ul {
   font: var(--primary-font);
 }
@@ -128,7 +134,7 @@ h1 {
 }
 
 h2 {
-  font: bold 2rem/3rem 'Poppins', sans-serif;
+  font: bold 1.875rem/2.5rem 'Poppins', sans-serif;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 0;
@@ -145,7 +151,7 @@ a:hover {
 
 .headers {
   text-transform: uppercase;
-  font: 1.3rem/2rem 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   margin: 1.5rem;
 }
@@ -159,6 +165,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: var(--content-padding);
+  width: 67%;
 }
 
 .nav-links {
@@ -245,6 +252,7 @@ textarea:active {
 
 .address-field {
   width: 20rem;
+  opacity: 0.7;
 }
 
 .submit-btn {
