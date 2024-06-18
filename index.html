@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
+    <title>KickStart</title>
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- add a description -->
@@ -21,24 +21,22 @@
 
     <!-- hero section -->
     <header id="header">
-      <section class="navigation">
-        <div>
-          <a href="/index.html">
-            <h1 class="site-name">KickStart</h1>
-          </a>
-        </div>
+      <div class="navigation">
+        <a href="/index.html">
+          <h1>KickStart</h1>
+        </a>
 
-        <nav>
-          <a href="/blog.html" class="nav-links">Blog</a>
-          <a href="" class="nav-links">Now</a>
+        <nav class="nav">
+          <a href="/blog.html" class="nav-link">Blog</a>
+          <a href="/now.html" class="nav-link">Now</a>
         </nav>
-      </section>
+      </div>
     </header>
 
     <!-- here is where the main content starts -->
-    <section class="content-wrapper cards">
+    <section class="content-wrapper">
       <!-- unreal engine resource -->
-      <div class="resources">
+      <div class="card">
         <div class="img">
           <a href="https://www.unrealengine.com/">
             <img src="./assets/UE-logo.jpg" alt="" />
@@ -89,7 +87,7 @@
       </div>
 
       <!-- web dev resource -->
-      <div class="resources">
+      <div class="card">
         <a href="https://www.unrealengine.com/">
           <img src="/assets/ben-kolde-unsplash.jpg" alt="" />
         </a>
@@ -182,31 +180,27 @@
     </section>
 
     <!-- this is where footer begins -->
-    <footer>
-      <div class="footer-wrapper">
-        <h1 class="footer-logo">
-          <a href="#header" class="footer-link">To page top</a>
-        </h1>
+    <footer class="content-wrapper">
+      <a href="#header" class="footer-link">To page top</a>
 
-        <p class="faded-text">
-          Ready for more? Than check out my YouTube channel.
-        </p>
+      <p class="faded-text">
+        Ready for more? Than check out my YouTube channel.
+      </p>
 
-        <a href="">
-          <button class="youtube-button">YouTube</button>
-        </a>
+      <a href="">
+        <button class="youtube-button">YouTube</button>
+      </a>
 
-        <nav class="footer-nav">
-          <a href="" class="footer-nav-link">Blog</a>
-          <a href="" class="footer-nav-link">Now</a>
-        </nav>
+      <nav class="nav">
+        <a href="/blog.html" class="nav-link">Blog</a>
+        <a href="/now.html" class="nav-link">Now</a>
+      </nav>
 
-        <section class="legal-info">
-          <div class="">
-            <p class="copyrights">©2024 KickStart. All rights reserved.</p>
-          </div>
-        </section>
-      </div>
+      <section class="legal-info">
+        <div class="">
+          <p class="copyrights">©2024 KickStart. All rights reserved.</p>
+        </div>
+      </section>
     </footer>
 
     <script src="js/app.js"></script>
