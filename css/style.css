@@ -15,8 +15,8 @@ html {
 
   /* variables */
   --page-padding: 1rem 3rem;
-  --content-padding: .5rem 1.5rem;
-
+  --content-padding: .5rem 1rem;
+  --mobile-padding: .5rem;
   --primary-font: 1rem/1.4rem 'Poppins', sans-serif;
 
   --primary-color: #211f1e;
@@ -124,7 +124,8 @@ h2 {
 }
 
 h2 {
-  font-size: 1.875rem/2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
   text-align: center;
 }
 
@@ -153,11 +154,12 @@ header {
   padding: var(--content-padding);
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: var(--text-margin);
 
   .navigation {
-    display: flex;
     width: 65%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
   }
@@ -166,6 +168,7 @@ header {
 .nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-transform: uppercase;
 
   & .nav-link,
@@ -245,7 +248,7 @@ article {
   margin-bottom: var(--text-margin);
 }
 
-.address-input-field,
+.address-input,
 textarea {
   width: 63%;
   opacity: .7;
@@ -396,8 +399,87 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 22.5rem) and (max-width: 64rem) {
+
   /* Style adjustments for viewports that meet the condition */
+
+  html {
+    font: .875rem/1.5rem 'Poppins', sans-serif;
+  }
+
+
+  h1,
+  h2 {
+    font: bold 1.5rem/2rem 'Poppins', sans-serif;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    padding: var(--content-padding);
+  }
+
+  header {
+    padding: var(--mobile-padding);
+
+    .navigation {
+      width: 94%;
+    }
+  }
+
+  .content-wrapper {
+    padding: .5rem;
+  }
+
+  img {
+    height: 15rem;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  hr {
+    width: 8.1875rem;
+    margin-bottom: .5rem;
+  }
+
+  .paragraph {
+    width: 100%;
+    text-align: center;
+  }
+
+  .interactions {
+    width: 95%;
+  }
+
+  .address-input {
+    width: 75%;
+  }
+
+  .button {
+    width: 30%;
+    margin-left: .5rem;
+  }
+
+  textarea {
+    width: 95%;
+  }
+
+  .to-page-top {
+    font-size: 1.3rem;
+  }
+
+  .social-button {
+    width: 100%;
+  }
+
 }
 
 @media print,
