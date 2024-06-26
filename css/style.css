@@ -239,6 +239,7 @@ article {
 
 .paragraph {
   width: 63%;
+  text-align: center;
 }
 
 .interactions {
@@ -452,7 +453,6 @@ footer {
 
   .paragraph {
     width: 100%;
-    text-align: center;
   }
 
   .interactions {
