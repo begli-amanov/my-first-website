@@ -133,6 +133,7 @@ h3 {
   text-align: center;
   font-size: 1.3rem;
   line-height: 1.5rem;
+  padding: inherit;
 }
 
 h4 {
@@ -240,7 +241,7 @@ article {
 }
 
 .interactions {
-  width: 35%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--text-margin);
@@ -248,7 +249,7 @@ article {
 
 .address-input,
 textarea {
-  width: 63%;
+  width: 68%;
   opacity: .7;
   font: inherit;
   transition: box-shadow .3s;
@@ -266,7 +267,7 @@ textarea {
 }
 
 .button {
-  width: 35%;
+  width: 30%;
   color: #fff;
   background: #ff7b29;
   border: .0625rem solid #ff7b29;
@@ -284,7 +285,7 @@ textarea {
 
 textarea {
   min-height: 10.625rem;
-  width: 35%;
+  width: 30%;
 
   /* Allow only vertical resizing of textareas. */
   resize: vertical;
@@ -425,7 +426,8 @@ footer {
     margin: 0;
   }
 
-  h2 {
+  h2,
+  .to-page-top {
     font-size: 1.3rem;
     line-height: 2rem;
     text-align: center;
@@ -438,34 +440,28 @@ footer {
   header {
     padding: var(--mobile-padding);
 
-    .navigation {
-      width: 94%;
+    & .navigation {
+      width: 95%;
     }
   }
 
   .content-wrapper {
-    padding: .5rem;
+    padding: var(--mobile-padding);
   }
 
   img {
     height: 15rem;
   }
 
-  .card {
+  .card,
+  .interactions,
+  textarea {
     width: 95%;
   }
 
   hr {
     width: 6.5rem;
-    margin-bottom: .5rem;
-  }
-
-  .paragraph {
-    width: 100%;
-  }
-
-  .interactions {
-    width: 95%;
+    margin-bottom: var(--mobile-padding);
   }
 
   .address-input {
@@ -474,21 +470,13 @@ footer {
 
   .button {
     width: 30%;
-    margin-left: .5rem;
+    margin-left: var(--mobile-padding);
   }
 
-  textarea {
-    width: 95%;
-  }
-
-  .to-page-top {
-    font-size: 1.3rem;
-  }
-
+  .paragraph,
   .social-button {
     width: 100%;
   }
-
 }
 
 @media print,
