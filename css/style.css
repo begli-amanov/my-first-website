@@ -164,6 +164,7 @@ a {
 header {
   padding: var(--page-padding);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: var(--text-margin);
@@ -440,7 +441,7 @@ footer {
   header {
     padding: var(--mobile-padding);
 
-    & .navigation {
+    .navigation {
       width: 95%;
     }
   }
