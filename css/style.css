@@ -490,8 +490,8 @@ textarea {
   }
 
   .button {
-    width: 30%;
-    margin-left: var(--mobile-padding);
+    right: .7rem;
+    bottom: .7rem;
   }
 
   .paragraph {
