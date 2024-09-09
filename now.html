@@ -21,12 +21,35 @@
     <header id="header">
       <div class="navigation">
         <a href="/index.html">
-          <h1>KickStart</h1>
+          <h1>KICKSTART</h1>
         </a>
 
         <nav class="nav">
-          <a href="/blog.html" class="nav-link">Blog</a>
           <a href="/now.html" class="nav-link">Now</a>
+          <a
+            href="https://memories-journal.ghost.io/"
+            class="nav-link"
+            target="_blank"
+            >Blog
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link icon"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </a>
         </nav>
       </div>
     </header>
@@ -79,7 +102,38 @@
         One of the most useful books I've red so far.
       </p>
 
-      <div style="height: 20vh; border: 0; margin-bottom: 1rem" class="card">
+      <!-- SUBSCRIBE FORM -->
+      <form id="subsForm" action="" method="post" class="content-wrapper">
+        <h2>Subscribe</h2>
+
+        <hr />
+        <article class="paragraph">
+          <p>
+            If you are enjoying this website, you might also enjoy my
+            <strong>blog posts</strong>. Subscribe with the
+            <strong>button</strong> below. Unsubscribe at any time. Same as, if
+            you aware of a valuable resource, I should share, please let me know
+            in any way you like. I will post it here with mentioning your name
+            (if you want) and giving you all the credits. Thank you!
+          </p>
+        </article>
+
+        <!-- <div class="interactions">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address..."
+            class="address-input"
+            required
+          />
+          <button id="submit" class="button">Submit</button>
+        </div>
+
+        <textarea id="message"></textarea> -->
+      </form>
+
+      <div style="height: 20vh; border: 0" class="card">
         <script
           src="https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js"
           data-background-color="#ffffff"
@@ -94,23 +148,105 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="content-wrapper extra-padding">
-      <a href="#header" class="to-page-top headers">To Top</a>
-      <p class="footer-text">
-        Ready for more? Than check out my YouTube channel.
-      </p>
-
-      <a href="https://www.youtube.com/">
-        <button class="button social-button">YouTube</button>
+    <!-- brings back to top/header -->
+    <button class="button">
+      <a href="#header"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#fff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-arrow-up-circle"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="16 12 12 8 8 12"></polyline>
+          <line x1="12" y1="16" x2="12" y2="8"></line>
+        </svg>
       </a>
+    </button>
 
-      <nav class="nav">
-        <a href="/blog.html" class="footer-nav-links">Blog</a>
-        <a href="/now.html" class="footer-nav-links">Now</a>
-      </nav>
+    <!-- FOOTER -->
+    <section class="footer">
+      <footer class="content-wrapper">
+        <a href="/index.html" class="to-page-top headers">KICKSTART</a>
+        <p>Ready for more? Than check out my YouTube channel.</p>
 
+        <!-- footer navigation -->
+        <a href="https://www.youtube.com/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="-1 -1 48 48"
+            id="Youtube-Clip-Logo--Streamline-Ultimate.svg"
+            height="78"
+            width="86"
+            class="social-button"
+          >
+            <desc>
+              Youtube Clip Logo Streamline Icon: https://streamlinehq.com
+            </desc>
+            <path
+              fill="#ff808c"
+              d="M44.083333333333336 14.638158333333333c0 -3.48128 -2.8217166666666667 -6.303859166666667 -6.302958333333334 -6.304798333333333H8.2179C4.736830833333333 8.334299166666666 1.91573325 11.157070000000001 1.9166666666666667 14.638158333333333v16.721958333333337c-0.00299 3.4822 2.8188416666666667 6.306791666666667 6.301233333333333 6.3066h29.562475c3.4825833333333334 0.00019166666666666667 6.305066666666667 -2.824016666666667 6.302958333333334 -6.3066V14.638158333333333Z"
+              stroke-width="2"
+            ></path>
+            <path
+              fill="#ffbfc5"
+              d="M8.2179 8.333359999999999C4.736811666666667 8.334299166666666 1.9157313333333332 11.157070000000001 1.9166666666666667 14.638158333333333v16.721958333333337c0.0052325 1.8896416666666667 0.8627875 3.675975 2.3337525 4.862008333333334L32.13924166666667 8.333359999999999H8.2179Z"
+              stroke-width="2"
+            ></path>
+            <path
+              stroke="#191919"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M44.083333333333336 14.638158333333333c0 -3.48128 -2.8217166666666667 -6.303859166666667 -6.302958333333334 -6.304798333333333H8.2179C4.736830833333333 8.334299166666666 1.91573325 11.157070000000001 1.9166666666666667 14.638158333333333v16.721958333333337c-0.00299 3.4822 2.8188416666666667 6.306791666666667 6.301233333333333 6.3066h29.562475c3.4825833333333334 0.00019166666666666667 6.305066666666667 -2.824016666666667 6.302958333333334 -6.3066V14.638158333333333Z"
+              stroke-width="2"
+            ></path>
+            <path
+              fill="#fff"
+              stroke="#191919"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M18.4161 30.225258333333336V14.3449275l12.409841666666669 7.940155833333334 -12.409841666666669 7.940175Z"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </a>
+
+        <nav class="nav">
+          <a href="/now.html" class="footer-nav-links">Now</a>
+          <a
+            href="https://memories-journal.ghost.io/"
+            class="footer-nav-links"
+            target="_blank"
+            >Blog<span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link icon"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg> </span
+          ></a>
+        </nav>
+      </footer>
       <p class="footer-text">©2024 KickStart. All rights reserved.</p>
-    </footer>
+    </section>
+
+    <script src="js/app.js"></script>
   </body>
 </html>

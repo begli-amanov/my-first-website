@@ -134,7 +134,7 @@ fieldset {
 
 h1,
 h2 {
-  font: bold 2.125rem/3rem 'Poppins', sans-serif;
+  font: 800 2rem/3rem 'Poppins', sans-serif;
   margin: 0;
 }
 
@@ -276,9 +276,11 @@ article {
   width: 1rem;
   height: 1rem;
   margin-left: .25rem;
+  margin-bottom: .25rem;
 }
 
-.address-input,
+/* !currently unused lines */
+/* .address-input,
 textarea {
   width: 68%;
   opacity: .7;
@@ -294,17 +296,24 @@ textarea {
     outline: none;
     box-shadow: var(--shadow-on-hover)
   }
-}
+} */
 
 .button {
-  width: 30%;
+  width: 3rem;
+  height: 3rem;
   color: #fff;
   background: #ff7b29;
   border: .0625rem solid #ff7b29;
-  border-radius: var(--primary-border-radius);
-  padding: var(--content-padding);
+  border-radius: 50%;
   font: inherit;
   transition: all .15s linear;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  box-shadow: var(--shadow-on-hover);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     cursor: pointer;
@@ -321,21 +330,17 @@ textarea {
   resize: vertical;
 }
 
-footer {
+.footer {
   background-color: var(--primary-color);
   color: #fff;
-  position: relative;
 
   .footer-text {
     opacity: .7;
     font-size: .9375rem;
-    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: .5rem;
     text-align: center;
   }
-}
-
-.extra-padding {
-  padding: 4% 2%;
 }
 
 .to-page-top {
@@ -343,11 +348,6 @@ footer {
   font-size: 1.5rem;
   display: block;
   margin: var(--text-margin);
-}
-
-.social-button {
-  width: 100%;
-  margin-bottom: var(--text-margin);
 }
 
 /* ==========================================================================
@@ -494,8 +494,7 @@ footer {
     margin-left: var(--mobile-padding);
   }
 
-  .paragraph,
-  .social-button {
+  .paragraph {
     width: 100%;
   }
 }
