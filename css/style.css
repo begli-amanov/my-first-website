@@ -241,7 +241,7 @@ header {
 .card {
   border: var(--secondary-border);
   border-radius: var(--primary-border-radius);
-  width: 67%;
+  width: 75%;
   margin: 1rem 0 3rem 0;
 }
 
@@ -280,7 +280,7 @@ article {
 }
 
 /* !currently unused lines */
-/* .address-input,
+.address-input,
 textarea {
   width: 68%;
   opacity: .7;
@@ -296,30 +296,44 @@ textarea {
     outline: none;
     box-shadow: var(--shadow-on-hover)
   }
-} */
+}
 
 .button {
-  width: 3rem;
-  height: 3rem;
+  width: 30%;
+  padding: var(--content-padding);
+  margin-left: .25rem;
   color: #fff;
   background: #ff7b29;
   border: .0625rem solid #ff7b29;
-  border-radius: 50%;
+  border-radius: var(--primary-border-radius);
   font: inherit;
   transition: all .15s linear;
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
   box-shadow: var(--shadow-on-hover);
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
 
   &:hover {
     cursor: pointer;
     background: var(--color-on-hover);
     border: .0625rem solid var(--color-on-hover);
   }
+}
+
+.go-top-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0;
+}
+
+.social-media-button {
+  width: 10%;
+  margin: 1rem 0;
 }
 
 textarea {
@@ -487,11 +501,6 @@ textarea {
 
   .address-input {
     width: 75%;
-  }
-
-  .button {
-    right: .7rem;
-    bottom: .7rem;
   }
 
   .paragraph {
