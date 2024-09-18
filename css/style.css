@@ -24,7 +24,7 @@ html {
   --color-on-hover: #ff5126;
 
   --primary-border: .0625rem solid var(--primary-color);
-  --secondary-border: .0625rem solid rgba(18, 42, 105, .2);
+  --secondary-border: .0625rem solid rgb(221 225 229 / 1);
   --primary-border-radius: .3rem;
 
   --primary-shadow: 0 2px 6px rgba(18, 43, 105, .04), 0 1px 2px rgba(18, 43, 105, .08), 0 0 0 1px rgba(18, 43, 105, .08);
@@ -270,6 +270,15 @@ article {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--text-margin);
+  border-radius: var(--primary-border-radius);
+  border: var(--secondary-border);
+  padding: .25rem;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
 }
 
 .icon {
@@ -279,30 +288,27 @@ article {
   margin-bottom: .25rem;
 }
 
-/* !currently unused lines */
-.address-input,
-textarea {
-  width: 68%;
+/* !currently unused lines (textarea)*/
+.address-input {
+  width: 80%;
   opacity: .7;
   font: inherit;
-  transition: box-shadow .3s;
-  padding: var(--content-padding);
-  border-radius: var(--primary-border-radius);
-  border: var(--secondary-border);
+  border: unset;
+  padding: var(--mobile-padding);
 
   &:hover,
   &:active,
   &:focus {
     outline: none;
-    box-shadow: var(--shadow-on-hover)
   }
 }
 
-.button {
+.button,
+.social-media-btn {
   width: 30%;
   padding: var(--content-padding);
   margin-left: .25rem;
-  color: #fff;
+  color: var(--primary-color);
   background: #ff7b29;
   border: .0625rem solid #ff7b29;
   border-radius: var(--primary-border-radius);
@@ -313,7 +319,6 @@ textarea {
   align-items: center;
   justify-content: center;
 
-
   &:hover {
     cursor: pointer;
     background: var(--color-on-hover);
@@ -321,7 +326,7 @@ textarea {
   }
 }
 
-.go-top-button {
+.go-top-btn {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -331,18 +336,22 @@ textarea {
   padding: 0;
 }
 
-.social-media-button {
+.social-media-btn {
   width: 10%;
   margin: 1rem 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--primary-color);
+  }
 }
 
-textarea {
+/* textarea {
   min-height: 10.625rem;
   width: 30%;
-
-  /* Allow only vertical resizing of textareas. */
   resize: vertical;
-}
+} */
 
 .footer {
   background-color: var(--primary-color);
@@ -488,9 +497,7 @@ textarea {
     height: 15rem;
   }
 
-  .card,
-  .interactions,
-  textarea {
+  .card {
     width: 95%;
   }
 
@@ -499,7 +506,8 @@ textarea {
     margin-bottom: var(--mobile-padding);
   }
 
-  .address-input {
+  .address-input,
+  .interactions {
     width: 75%;
   }
 
