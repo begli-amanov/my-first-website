@@ -7,9 +7,11 @@
  * Kroc Carmen, and the H5BP dev community and team.
  */
 
-/* ==========================================================================
+/* 
+==========================================================================
    Base styles: opinionated defaults
-   ========================================================================== */
+==========================================================================
+*/
 
 html {
 
@@ -27,8 +29,8 @@ html {
   --secondary-border: .0625rem solid rgb(221 225 229 / 1);
   --primary-border-radius: .3rem;
 
-  --primary-shadow: 0 2px 6px rgba(18, 43, 105, .04), 0 1px 2px rgba(18, 43, 105, .08), 0 0 0 1px rgba(18, 43, 105, .08);
-  --shadow-on-hover: 0 2px 6px rgba(18, 43, 105, .12), 0 1px 2px rgba(18, 43, 105, .12), 0 0 0 1px rgba(18, 43, 105, .08);
+  --primary-shadow: 0 .125rem .375rem rgba(18, 43, 105, .04), 0 .0625rem .125rem rgba(18, 43, 105, .08), 0 0 0 .0625rem rgba(18, 43, 105, .08);
+  --shadow-on-hover: 0 .125rem .375rem rgba(18, 43, 105, .12), 0 .0625rem .125rem rgba(18, 43, 105, .12), 0 0 0 .0625rem rgba(18, 43, 105, .08);
 
   --text-margin: 1rem;
   --section-margin: 4rem;
@@ -99,9 +101,11 @@ fieldset {
   padding: 0;
 }
 
-/* ==========================================================================
-   !Author's custom styles
-   ========================================================================== */
+/* 
+==========================================================================
+   Authors customs style
+==========================================================================
+*/
 
 
 /* 
@@ -188,7 +192,7 @@ header {
   margin-top: var(--text-margin);
 
   .navigation {
-    width: 67%;
+    width: 75%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -288,7 +292,6 @@ article {
   margin-bottom: .25rem;
 }
 
-/* !currently unused lines (textarea)*/
 .address-input {
   width: 80%;
   opacity: .7;
@@ -373,9 +376,11 @@ article {
   margin: var(--text-margin);
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
+/* 
+==========================================================================
+   Helper Classes
+==========================================================================
+*/
 
 /*
  * Hide visually and from screen readers
@@ -398,13 +403,13 @@ article {
 .visually-hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
+  height: .0625rem;
+  margin: -0.0625rem;
   overflow: hidden;
   padding: 0;
   position: absolute;
   white-space: nowrap;
-  width: 1px;
+  width: .0625rem;
   /* 1 */
 }
 
@@ -450,11 +455,15 @@ article {
   clear: both;
 }
 
-/* ==========================================================================
+/* 
+==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
-   ========================================================================== */
+==========================================================================
+*/
+
+/* !need to tweak display sizes between 768px to 1024px */
 
 @media only screen and (min-width: 22.5rem) and (max-width: 64rem) {
 
@@ -481,16 +490,13 @@ article {
     font-size: 1.4rem;
   }
 
-  header {
+  header,
+  .content-wrapper {
     padding: var(--mobile-padding);
 
     .navigation {
       width: 95%;
     }
-  }
-
-  .content-wrapper {
-    padding: var(--mobile-padding);
   }
 
   img {
@@ -504,6 +510,10 @@ article {
   hr {
     width: 6.5rem;
     margin-bottom: var(--mobile-padding);
+  }
+
+  .social-media-btn {
+    width: 30%;
   }
 
   .address-input,
@@ -523,11 +533,13 @@ article {
   /* Style adjustments for high resolution devices */
 }
 
-/* ==========================================================================
+/* 
+==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+==========================================================================
+*/
 
 @media print {
 
@@ -569,7 +581,7 @@ article {
 
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: .0625rem solid #999;
     page-break-inside: avoid;
   }
 
