@@ -463,9 +463,7 @@ article {
 ==========================================================================
 */
 
-/* !need to tweak display sizes between 768px to 1024px */
-
-@media only screen and (min-width: 22.5rem) and (max-width: 64rem) {
+@media only screen and (min-width: 20rem) and (max-width: 48rem) {
 
   /* Style adjustments for viewports that meet the condition */
 
@@ -518,11 +516,41 @@ article {
 
   .address-input,
   .interactions {
-    width: 75%;
+    width: 95%;
+    padding: 4px;
   }
 
   .paragraph {
     width: 100%;
+  }
+
+  .quote {
+    text-align: center;
+  }
+
+
+}
+
+/* the smallest screen size in developer tools */
+@media only screen and (min-width: 48rem) and (max-width: 64rem) {
+
+  .address-input,
+  .interactions {
+    width: 55%;
+    padding: 4px;
+  }
+
+  .social-media-btn {
+    width: 20%;
+  }
+
+  p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .paragraph {
+    width: 80%;
   }
 }
 
